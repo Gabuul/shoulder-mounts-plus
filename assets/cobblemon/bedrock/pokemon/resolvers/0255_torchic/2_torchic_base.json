@@ -1,0 +1,10 @@
+{
+  "species": "cobblemon:torchic",
+  "order": 2,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:torchic2"
+    }
+  ]
+}

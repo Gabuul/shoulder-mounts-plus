@@ -1,0 +1,10 @@
+{
+  "species": "cobblemon:chimchar",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:chimchar2"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "species": "cobblemon:treecko",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:treecko2"
+    }
+  ]
+}

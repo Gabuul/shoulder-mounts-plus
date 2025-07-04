@@ -1,0 +1,10 @@
+{
+  "species": "cobblemon:oshawott",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:oshawott2"
+    }
+  ]
+}

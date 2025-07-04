@@ -1,0 +1,10 @@
+{
+  "species": "cobblemon:mudkip",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:mudkip2"
+    }
+  ]
+}

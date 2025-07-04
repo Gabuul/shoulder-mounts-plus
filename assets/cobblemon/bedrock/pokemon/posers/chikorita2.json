@@ -1,0 +1,55 @@
+{
+    "rootBone": "chikorita",
+    "portraitScale": 1.66,
+    "portraitTranslation": [-0.14, 0, 0],
+    "profileScale": 0.73,
+    "profileTranslation": [0.0, 0.65, 0.0],
+    "animations": {
+        "cry": "q.bedrock_stateful('chikorita', 'cry')"
+    },
+    "poses": {
+        "battle-standing": {
+            "poseTypes": ["STAND"],
+            "isBattle": true,
+            "animations": ["q.look('head')", "q.bedrock('chikorita', 'battle_idle')"],
+            "quirks": ["q.bedrock_quirk('chikorita', 'blink')"]
+        },
+        "standing": {
+            "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+            "isBattle": false,
+            "animations": ["q.look('head')", "q.bedrock('chikorita', 'ground_idle')"],
+            "quirks": ["q.bedrock_quirk('chikorita', 'blink')"]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": ["q.look('head')", "q.bedrock('chikorita', 'ground_walk')"],
+            "quirks": ["q.bedrock_quirk('chikorita', 'blink')"]
+        },
+        "sleep": {
+            "poseTypes": ["SLEEP"],
+            "animations": ["q.bedrock('chikorita', 'sleep')"]
+        },
+        "shoulder_left": {
+            "poseTypes": ["SHOULDER_LEFT"],
+            "animations": ["q.look('head')", "q.bedrock('chikorita', 'shoulder_left')"],
+            "quirks": ["q.bedrock_quirk('chikorita', 'blink')"],
+            "transformedParts": [
+              {
+                "part": "body",
+                "position": [1.5, 2, -0.3]
+              }
+            ]
+        },
+        "shoulder_right": {
+            "poseTypes": ["SHOULDER_RIGHT"],
+            "animations": ["q.look('head')", "q.bedrock('chikorita', 'shoulder_left')"],
+            "quirks": ["q.bedrock_quirk('chikorita', 'blink')"],
+            "transformedParts": [
+              {
+                "part": "body",
+                "position": [-1.5, 2, -0.3]
+              }
+            ]
+        }
+    }
+}

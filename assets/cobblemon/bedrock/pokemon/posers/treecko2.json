@@ -1,0 +1,45 @@
+{
+    "rootBone": "treecko",
+    "portraitScale": 2.13,
+    "portraitTranslation": [0, 0.23, 0],
+    "profileScale": 0.7,
+    "profileTranslation": [0, 0.7, 0],
+    "animations": {
+        "cry": "q.bedrock_stateful('treecko', 'cry')"
+    },
+    "poses": {
+        "standing": {
+            "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+            "isBattle": false,
+            "animations": ["q.look('head')", "q.bedrock('treecko', 'ground_idle')"],
+            "quirks": ["q.bedrock_quirk('treecko', 'blink')"]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": ["q.look('head')", "q.bedrock('treecko', 'ground_walk')"],
+            "quirks": ["q.bedrock_quirk('treecko', 'blink')"]
+        },
+        "shoulder_left": {
+            "poseTypes": ["SHOULDER_LEFT"],
+            "animations": ["q.look('head')", "q.bedrock('treecko', 'shoulder_left')"],
+            "quirks": ["q.bedrock_quirk('treecko', 'blink')"],
+            "transformedParts": [
+              {
+                "part": "body",
+                "position": [0.8, 5.3, -0.8]
+              }
+            ]
+        },
+        "shoulder_right": {
+            "poseTypes": ["SHOULDER_RIGHT"],
+            "animations": ["q.look('head')", "q.bedrock('treecko', 'shoulder_right')"],
+            "quirks": ["q.bedrock_quirk('treecko', 'blink')"],
+            "transformedParts": [
+              {
+                "part": "body",
+                "position": [-0.8, 5.3, -0.8]
+              }
+            ]
+        }
+    }
+}

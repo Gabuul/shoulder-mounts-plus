@@ -1,0 +1,54 @@
+{
+    "rootBone": "cyndaquil",
+    "portraitScale": 1.43,
+    "portraitTranslation": [-0.29, 0, 0],
+    "profileScale": 0.63,
+    "profileTranslation": [0.0, 0.83, 0.0],
+    "animations": {
+        "cry": "q.bedrock_stateful('cyndaquil', 'cry')",
+        "battle_cry": "q.bedrock_stateful('cyndaquil', 'battle_cry')"
+    },
+    "poses": {
+        "battle-standing": {
+            "poseTypes": ["STAND"],
+            "isBattle": true,
+            "animations": ["q.look('head')", "q.bedrock('cyndaquil', 'battle_idle')"],
+            "namedAnimations": {
+              "cry": "q.bedrock_primary('cyndaquil', 'battle_cry', q.curve('symmetrical_wide'))"
+            }
+        },
+        "standing": {
+            "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+            "isBattle": false,
+            "animations": ["q.look('head')", "q.bedrock('cyndaquil', 'ground_idle')"]
+        },
+        "walking": {
+            "poseTypes": ["WALK"],
+            "animations": ["q.look('head')", "q.bedrock('cyndaquil', 'ground_walk')"]
+        },
+        "sleep": {
+            "poseTypes": ["SLEEP"],
+            "animations": ["q.bedrock('cyndaquil', 'sleep')"]
+        },
+        "shoulder_left": {
+            "poseTypes": ["SHOULDER_LEFT"],
+            "animations": ["q.look('head')", "q.bedrock('cyndaquil', 'shoulder_left')"],
+            "transformedParts": [
+              {
+                "part": "body",
+                "position": [3, 13, 5]
+              }
+            ]
+        },
+        "shoulder_right": {
+            "poseTypes": ["SHOULDER_RIGHT"],
+            "animations": ["q.look('head')", "q.bedrock('cyndaquil', 'shoulder_right')"],
+            "transformedParts": [
+              {
+                "part": "body",
+                "position": [-3, 13, 5]
+              }
+            ]
+        }
+    }
+}

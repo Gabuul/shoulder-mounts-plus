@@ -1,0 +1,10 @@
+{
+  "species": "cobblemon:bulbasaur",
+  "order": 2,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:bulbasaur2"
+    }
+  ]
+}
