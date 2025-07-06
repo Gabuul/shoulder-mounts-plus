@@ -1,0 +1,121 @@
+{
+    "rootBone": "oshawott",
+    "portraitScale": 2.0,
+    "portraitTranslation": [-0.2, -0.15, 0.0],
+    "profileScale": 0.7,
+    "profileTranslation": [0.0, 0.69, 0.0],
+    "animations": {
+        "cry": "q.bedrock_stateful('oshawott', 'cry')"
+    },
+    "poses": {
+        "battle-standing": {
+            "poseTypes": ["STAND", "FLOAT"],
+            "transformTicks": 10,
+            "isBattle": true,
+            "animations": ["q.look('head')", "q.bedrock('oshawott', 'ground_idle')"],
+            "quirks": ["q.bedrock_quirk('oshawott', 'blink')"],
+            "transformedParts": [
+                {
+                    "part": "scalchop_hand",
+                    "isVisible": true
+                },
+                {
+                    "part": "scalchop_torso",
+                    "isVisible": false
+                }
+            ]
+        },
+        "standing": {
+            "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+            "isBattle": false,
+            "animations": ["q.look('head')", "q.bedrock('oshawott', 'ground_idle')"],
+            "quirks": ["q.bedrock_quirk('oshawott', 'blink')"],
+            "transformTicks": 10,
+            "transformedParts": [
+                {
+                    "part": "scalchop_hand",
+                    "isVisible": false
+                },
+                {
+                    "part": "scalchop_torso",
+                    "isVisible": true
+                }
+            ]
+        },
+        "walking": {
+            "poseTypes": ["WALK", "SWIM"],
+            "isBattle": false,
+            "animations": ["q.look('head')", "q.bedrock('oshawott', 'ground_idle')",
+                           "q.biped_walk(0.6, 0.9, 'leg_left', 'leg_right')",
+                           "q.bimanual_swing(0.6, 0.9, 'arm_left', 'arm_right')"],
+            "quirks": ["q.bedrock_quirk('oshawott', 'blink')"],
+            "transformTicks": 10,
+            "transformedParts": [
+                {
+                    "part": "scalchop_hand",
+                    "isVisible": false
+                },
+                {
+                    "part": "scalchop_torso",
+                    "isVisible": true
+                }
+            ]
+        },
+        "sleep": {
+            "poseTypes": ["SLEEP"],
+            "animations": ["q.bedrock('oshawott', 'sleep')"],
+            "transformedParts": [
+                {
+                    "part": "body",
+                    "position": [0, -7, 0]
+                },
+                {
+                    "part": "scalchop_hand",
+                    "isVisible": false
+                },
+                {
+                    "part": "scalchop_torso",
+                    "isVisible": true
+                }
+            ]
+        },
+        "shoulder_left": {
+            "poseTypes": ["SHOULDER_LEFT"],
+            "animations": ["q.look('head')", "q.bedrock('oshawott', 'shoulder_left')"],
+            "quirks": ["q.bedrock_quirk('oshawott', 'blink')"],
+            "transformedParts": [
+                {
+                    "part": "body",
+                    "position": [1.8, 7.4, 8]
+                },
+                {
+                    "part": "scalchop_hand",
+                    "isVisible": false
+                },
+                {
+                    "part": "scalchop_torso",
+                    "isVisible": true
+                }
+            ]
+        },
+        "shoulder_right": {
+            "poseTypes": ["SHOULDER_RIGHT"],
+            "animations": ["q.look('head')", "q.bedrock('oshawott', 'shoulder_right')"],
+            "quirks": ["q.bedrock_quirk('oshawott', 'blink')"],
+            "transformedParts": [
+                {
+                    "part": "body",
+                    "position": [-1.8, 7.4, 8]
+                },
+                {
+                    "part": "scalchop_hand",
+                    "isVisible": false
+                },
+                {
+                    "part": "scalchop_torso",
+                    "isVisible": true
+                }
+            ]
+        }
+    }
+}

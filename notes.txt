@@ -13,7 +13,7 @@ Shoulder mount left and right animations:
 [x] Piplup
 [x] Snivy
 [o] Tepig
-[ ] Oshawott
+[x] Oshawott
 [ ] Chespin
 [ ] Fennekin
 [ ] Froakie
@@ -30,3 +30,6 @@ Shoulder mount left and right animations:
 o = officially implemented
 x = implemented by me
 Add shoulder_left and shoulder_right animations, fix offset in gui
+
+
+Go through kotlin posers and clean up at the end !!!
