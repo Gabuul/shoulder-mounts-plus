@@ -30,7 +30,7 @@
         "transformedParts": [
           {
             "part": "body",
-            "position": [3.25, 1.75, 0.6]
+            "position": [3.25, 5.8, 5]
           }
         ]
     },
@@ -41,7 +41,7 @@
         "transformedParts": [
           {
             "part": "body",
-            "position": [-3.25, 1.75, 0.6]
+            "position": [-3.25, 5.8, 5]
           }
         ]
     }

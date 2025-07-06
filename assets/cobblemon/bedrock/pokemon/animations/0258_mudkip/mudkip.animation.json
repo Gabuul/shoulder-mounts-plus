@@ -214,6 +214,7 @@
 			"animation_length": 2.5,
 			"bones": {
 				"body": {
+					"rotation": [-58.11966, -6.6782, 10.59061],
 					"position": {
 						"0.0": {
 							"post": [0, 0, 0],
@@ -230,7 +231,7 @@
 					}
 				},
 				"head": {
-					"rotation": [0, 0, 12.5]
+					"rotation": [45, 0, 12.5]
 				},
 				"fin": {
 					"rotation": {
@@ -297,25 +298,25 @@
 					}
 				},
 				"leg_front_left": {
-					"rotation": [-42.5, 0, 0]
+					"rotation": [-17.43745, 1.50179, 4.76968]
 				},
 				"leg_front_left2": {
-					"rotation": [-7.5, 0, 0]
+					"rotation": [-7.47178, 0.65182, 4.95744]
 				},
 				"leg_front_right": {
-					"rotation": [-47.5, 0, 0]
+					"rotation": [-25, 0, 0]
 				},
 				"leg_front_right2": {
 					"rotation": [-7.5, 0, 0]
 				},
 				"leg_back_left": {
-					"rotation": [32.5, 0, 0]
+					"rotation": [42.5, 0, 0]
 				},
 				"leg_back_left2": {
 					"rotation": [5, 0, 0]
 				},
 				"leg_back_right": {
-					"rotation": [32.5, 0, 0]
+					"rotation": [42.5, 0, 0]
 				},
 				"leg_back_right2": {
 					"rotation": [5, 0, 0]
@@ -327,30 +328,31 @@
 			"animation_length": 2.5,
 			"bones": {
 				"leg_front_left": {
-					"rotation": [-42.5, 0, 0]
+					"rotation": [-25, 0, 0]
 				},
 				"leg_front_left2": {
 					"rotation": [-7.5, 0, 0]
 				},
 				"leg_front_right": {
-					"rotation": [-42.5, 0, 0]
+					"rotation": [-17.43745, -1.50179, -4.76968]
 				},
 				"leg_front_right2": {
-					"rotation": [-7.5, 0, 0]
+					"rotation": [-7.47178, -0.65182, -4.95744]
 				},
 				"leg_back_left": {
-					"rotation": [32.5, 0, 0]
+					"rotation": [42.5, 0, 0]
 				},
 				"leg_back_left2": {
 					"rotation": [5, 0, 0]
 				},
 				"leg_back_right": {
-					"rotation": [32.5, 0, 0]
+					"rotation": [42.5, 0, 0]
 				},
 				"leg_back_right2": {
 					"rotation": [5, 0, 0]
 				},
 				"body": {
+					"rotation": [-58.11966, 6.6782, -10.59061],
 					"position": {
 						"0.0": {
 							"post": [0, 0, 0],
@@ -365,7 +367,7 @@
 					}
 				},
 				"head": {
-					"rotation": [0, 0, -12.5]
+					"rotation": [45, 0, -12.5]
 				},
 				"fin": {
 					"rotation": {

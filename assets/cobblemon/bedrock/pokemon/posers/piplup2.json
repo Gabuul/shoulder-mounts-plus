@@ -46,7 +46,7 @@
             "transformedParts": [
               {
                 "part": "body",
-                "position": [1, -0.15, 0]
+                "position": [-0.5, 7.5, 5]
               }
             ]
         },
