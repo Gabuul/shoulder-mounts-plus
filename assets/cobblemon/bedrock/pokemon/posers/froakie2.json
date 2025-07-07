@@ -1,0 +1,89 @@
+{
+  "portraitScale": 2.0,
+  "portraitTranslation": [-0.2, -0.5, 0.0],
+  "profileScale": 0.8,
+  "profileTranslation": [0.0, 0.5, 0.0],
+  "rootBone": "froakie",
+  "animations": {
+    "faint": "q.bedrock_primary('froakie', 'faint', q.curve('one'))",
+    "cry": "q.bedrock_stateful('froakie', 'cry')"
+  },
+  "poses": {
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "transformTicks": 10,
+      "quirks": ["q.bedrock_quirk('froakie', 'blink')"],
+      "animations": ["q.bedrock('froakie', 'sleep')"]
+    },
+    "standing": {
+      "poseName": "standing",
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "transformTicks": 10,
+      "isBattle": false,
+      "animations": ["q.look('head')", "q.bedrock('froakie', 'ground_idle')"],
+      "quirks": ["q.bedrock_quirk('froakie', 'blink')"]
+    },
+    "walking": {
+      "poseName": "walking",
+      "poseTypes": ["WALK"],
+      "transformTicks": 10,
+      "isBattle": false,
+      "animations": ["q.look('head')", "q.bedrock('froakie', 'ground_walk')"],
+      "quirks": ["q.bedrock_quirk('froakie', 'blink')"]
+    },
+    "battle-standing": {
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "transformTicks": 10,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('froakie', 'battle_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('froakie', 'blink')"]
+    },
+    "float": {
+      "poseTypes": ["FLOAT", "HOVER"],
+      "poseName": "swim_idle",
+      "transformTicks": 10,
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('froakie', 'water_idle')"
+      ],
+      "quirks": ["q.bedrock_quirk('froakie', 'blink')"]
+    },
+    "swim": {
+      "poseTypes": ["SWIM"],
+      "poseName": "swim",
+      "transformTicks": 10,
+      "isBattle": false,
+      "animations": [
+        "q.look('head')",
+        "q.bedrock('froakie', 'water_swim')"
+      ],
+      "quirks": ["q.bedrock_quirk('froakie', 'blink')"]
+    },
+    "shoulder_left": {
+      "poseTypes": ["SHOULDER_LEFT"],
+      "animations": ["q.look('head')", "q.bedrock('froakie', 'shoulder_left')"],
+      "quirks": ["q.bedrock_quirk('froakie', 'blink')"],
+      "transformedParts": [
+        {
+          "part": "body",
+          "position": [3.2, 6.7, -1.5]
+        }
+      ]
+    },
+    "shoulder_right": {
+      "poseTypes": ["SHOULDER_RIGHT"],
+      "animations": ["q.look('head')", "q.bedrock('froakie', 'shoulder_right')"],
+      "quirks": ["q.bedrock_quirk('froakie', 'blink')"],
+      "transformedParts": [
+        {
+          "part": "body",
+          "position": [-3.2, 6.7, -1.5]
+        }
+      ]
+    }
+  }
+}

@@ -9,7 +9,7 @@
     },
     "poses": {
         "standing": {
-            "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+            "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE", "FLOAT"],
             "isBattle": false,
             "animations": ["q.look('head')", "q.bedrock('chespin', 'ground_idle')"],
             "quirks": ["q.bedrock_quirk('chespin', 'blink')"]
