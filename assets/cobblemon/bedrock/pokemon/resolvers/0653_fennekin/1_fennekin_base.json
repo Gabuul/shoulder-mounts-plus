@@ -1,0 +1,10 @@
+{
+  "species": "cobblemon:fennekin",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:fennekin2"
+    }
+  ]
+}
