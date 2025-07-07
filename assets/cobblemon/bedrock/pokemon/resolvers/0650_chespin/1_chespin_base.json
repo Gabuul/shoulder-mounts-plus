@@ -1,0 +1,10 @@
+{
+  "species": "cobblemon:chespin",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:chespin2"
+    }
+  ]
+}

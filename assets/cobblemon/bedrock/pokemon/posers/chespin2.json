@@ -1,0 +1,50 @@
+{
+    "rootBone": "chespin",
+    "portraitScale": 2.7,
+    "portraitTranslation": [-0.15, -1.2, 0.0],
+    "profileScale": 0.85,
+    "profileTranslation": [0.0, 0.5, 0.0],
+    "animations": {
+        "cry": "q.bedrock_stateful('chespin', 'cry')"
+    },
+    "poses": {
+        "standing": {
+            "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+            "isBattle": false,
+            "animations": ["q.look('head')", "q.bedrock('chespin', 'ground_idle')"],
+            "quirks": ["q.bedrock_quirk('chespin', 'blink')"]
+        },
+        "walking": {
+            "poseTypes": ["WALK", "SWIM"],
+            "isBattle": false,
+            "animations": ["q.look('head')", "q.bedrock('chespin', 'ground_walk')"],
+            "quirks": ["q.bedrock_quirk('chespin', 'blink')"]
+        },
+        "sleep": {
+            "poseTypes": ["SLEEP"],
+            "animations": ["q.bedrock('chespin', 'sleep')"]
+        },
+        "shoulder_left": {
+            "poseTypes": ["SHOULDER_LEFT"],
+            "animations": ["q.look('head')", "q.bedrock('chespin', 'shoulder_left')"],
+            "quirks": ["q.bedrock_quirk('chespin', 'blink')"],
+            "transformedParts": [
+                {
+                    "part": "body",
+                    "position": [0.8, 7.4, 5.5]
+                }
+            ]
+        },
+        "shoulder_right": {
+            "poseTypes": ["SHOULDER_RIGHT"],
+            "animations": ["q.look('head')", "q.bedrock('chespin', 'shoulder_right')"],
+            "quirks": ["q.bedrock_quirk('chespin', 'blink')"],
+            "transformedParts": [
+                {
+                    "part": "body",
+                    "position": [-1.8, 7.4, 8]
+                }
+            ]
+        }
+    }
+}
