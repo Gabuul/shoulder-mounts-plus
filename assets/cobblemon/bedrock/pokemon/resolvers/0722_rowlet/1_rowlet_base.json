@@ -1,0 +1,10 @@
+{
+  "species": "cobblemon:rowlet",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:rowlet2"
+    }
+  ]
+}
