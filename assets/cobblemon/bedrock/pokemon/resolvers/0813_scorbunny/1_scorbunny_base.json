@@ -1,0 +1,10 @@
+{
+  "species": "cobblemon:scorbunny",
+  "order": 1,
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon:scorbunny2"
+    }
+  ]
+}
