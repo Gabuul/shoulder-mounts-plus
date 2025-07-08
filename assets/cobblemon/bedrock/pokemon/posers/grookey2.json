@@ -1,0 +1,101 @@
+{
+  "portraitScale": 2.2,
+  "portraitTranslation": [-0.2, -0.9, 0.0],
+  "profileScale": 0.75,
+  "profileTranslation": [0.0, 0.6, 0.0],
+  "rootBone": "grookey",
+  "animations": {
+    "cry": "q.bedrock_stateful('grookey', 'cry')"
+  },
+  "poses": {
+    "battle-standing": {
+      "poseName": "batte_idle",
+      "transformTicks": 10,
+      "poseTypes": ["STAND"],
+      "isBattle": true,
+      "animations": ["q.look('head')", "q.bedrock('grookey', 'battle_idle')"],
+      "quirks": ["q.bedrock_quirk('grookey', 'blink')"],
+      "transformedParts": [
+        {
+          "part": "hair_stick",
+          "isVisible": false
+        },
+        {
+          "part": "stick",
+          "isVisible": true
+        }
+      ]
+    },
+    "standing": {
+      "poseName": "standing",
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "isBattle": false,
+      "animations": ["q.look('head')", "q.bedrock('grookey', 'ground_idle')"],
+      "quirks": ["q.bedrock_quirk('grookey', 'blink')"],
+      "transformedParts": [
+        {
+          "part": "hair_stick",
+          "isVisible": true
+        },
+        {
+          "part": "stick",
+          "isVisible": false
+        }
+      ]
+    },
+    "walking": {
+      "poseName": "walk",
+      "poseTypes": ["WALK"],
+      "animations": ["q.look('head')", "q.bedrock('grookey', 'ground_walk')"],
+      "quirks": ["q.bedrock_quirk('grookey', 'blink')"],
+      "transformedParts": [
+        {
+          "part": "hair_stick",
+          "isVisible": true
+        },
+        {
+          "part": "stick",
+          "isVisible": false
+        }
+      ]
+    },
+    "shoulder_left": {
+        "poseTypes": ["SHOULDER_LEFT"],
+        "animations": ["q.look('head')", "q.bedrock('grookey', 'shoulder_left')"],
+        "quirks": ["q.bedrock_quirk('grookey', 'blink')"],
+        "transformedParts": [
+          {
+            "part": "body",
+            "position": [2, -0.1, 1]
+          },
+          {
+            "part": "hair_stick",
+            "isVisible": true
+          },
+          {
+            "part": "stick",
+            "isVisible": false
+          }
+        ]
+    },
+    "shoulder_right": {
+        "poseTypes": ["SHOULDER_RIGHT"],
+        "animations": ["q.look('head')", "q.bedrock('grookey', 'shoulder_right')"],
+        "quirks": ["q.bedrock_quirk('grookey', 'blink')"],
+        "transformedParts": [
+          {
+            "part": "body",
+            "position": [-2, -0.1, 1]
+          },
+          {
+            "part": "hair_stick",
+            "isVisible": true
+          },
+          {
+            "part": "stick",
+            "isVisible": false
+          }
+        ]
+    }
+  }
+}
