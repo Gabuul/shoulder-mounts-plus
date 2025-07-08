@@ -1,0 +1,60 @@
+{
+  "portraitScale": 1.6,
+  "portraitTranslation": [-0.2, -0.2, 0],
+  "profileScale": 0.65,
+  "profileTranslation": [0.0, 0.75, 0.0],
+  "rootBone": "fuecoco",
+  "animations": {
+    "cry": "q.bedrock_stateful('fuecoco', 'cry')"
+  },
+  "poses": {
+    "battle-standing": {
+      "poseName": "batte_idle",
+      "poseTypes": ["STAND"],
+      "transformTicks": 10,
+      "isBattle": true,
+      "animations": ["q.look('head', 1, 1, 70, -45, 0, 0)", "q.bedrock('fuecoco', 'battle_idle')"],
+      "quirks": ["q.bedrock_quirk('fuecoco', 'blink')"]
+    },
+    "standing": {
+      "poseName": "standing",
+      "transformTicks": 10,
+      "poseTypes": ["STAND", "NONE", "PORTRAIT", "PROFILE"],
+      "animations": ["q.look('head', 1, 1, 70, -45, 0, 0)", "q.bedrock('fuecoco', 'ground_idle')"],
+      "quirks": ["q.bedrock_quirk('fuecoco', 'blink')"]
+    },
+    "walking": {
+      "poseName": "walking",
+      "poseTypes": ["WALK"],
+      "transformTicks": 10,
+      "animations": ["q.look('head', 1, 1, 70, -45, 0, 0)", "q.bedrock('fuecoco', 'ground_walk')"],
+      "quirks": ["q.bedrock_quirk('fuecoco', 'blink')"]
+    },
+    "sleep": {
+      "poseTypes": ["SLEEP"],
+      "animations": ["q.bedrock('fuecoco', 'sleep')"]
+    },
+    "shoulder_left": {
+        "poseTypes": ["SHOULDER_LEFT"],
+        "animations": ["q.look('head', 1, 1, 15, -45, 0, 0)", "q.bedrock('fuecoco', 'shoulder_left')"],
+        "quirks": ["q.bedrock_quirk('fuecoco', 'blink')"],
+        "transformedParts": [
+          {
+            "part": "body",
+            "position": [0.3, 6.5, 9.3]
+          }
+        ]
+    },
+    "shoulder_right": {
+        "poseTypes": ["SHOULDER_RIGHT"],
+        "animations": ["q.look('head', 1, 1, 70, -45, 0, 0)", "q.bedrock('fuecoco', 'shoulder_right')"],
+        "quirks": ["q.bedrock_quirk('fuecoco', 'blink')"],
+        "transformedParts": [
+          {
+            "part": "body",
+            "position": [-0.3, 6.5, 9.3]
+          }
+        ]
+    }
+  }
+}
